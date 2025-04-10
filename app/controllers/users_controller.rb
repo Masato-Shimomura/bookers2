@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   def index
     @book = Book.new
-    @user = User.all
+    @users = User.all
   end    
 
   def update
