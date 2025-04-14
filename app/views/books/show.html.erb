@@ -31,7 +31,7 @@
       </td>
       <td>
       <% if @book.user == current_user %>
-       <%= link_to 'Delete', book_path(@book), style: "background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px;", method: :delete, data: { confirm: '本当に消しますか?' } %>
+       <%= link_to 'Destroy', book_path(@book), style: "background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px;", method: :delete, data: { confirm: '本当に消しますか?' } %>
       <% end %>
       </td>  
    </tr>
